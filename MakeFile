@@ -1,0 +1,7 @@
+start :
+	docker compose up -d
+	symfony server:start -d
+
+down :
+	docker compose down
+	symfony server:stop

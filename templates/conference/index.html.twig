@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello !{% endblock %}
+
+{% block body %}
+<style>
+
+</style>
+
+<div class="example-wrapper">
+    {% for conference in conferences %}
+    <a href="{{ path('app_comment' , {id: conference.id}) }}">ssss  </a>
+        {{ conference.city }}
+        {{ conference.year }}
+
+    {% endfor %}
+
+</div>
+{% endblock %}
